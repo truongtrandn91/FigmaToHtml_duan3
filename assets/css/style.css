@@ -4,6 +4,7 @@
 
 :root {
   /* --font-heading: "Sora"; */
+  --header-bg: #10375c;
 }
 
 html {
@@ -15,4 +16,86 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
+}
+
+/* ======================== Common ====================== */
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 24px);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 205px;
+  line-height: 60px;
+  border-radius: 30px;
+  background: #2e80ce;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* ======================== Header ====================== */
+
+.header {
+  background: var(--header-bg);
+  min-height: 100vh;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.header__action--login,
+.navbar__link {
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+  padding: 8px 21px;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #fff;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  top: -3px;
+  right: 8px;
+}
+
+.header__action--login {
+  margin-right: 7px;
+}
+
+.header__action--signup {
+  min-width: 104px;
+  line-height: 44px;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
