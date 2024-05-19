@@ -59,6 +59,33 @@ a {
   margin-top: 18px;
 }
 
+/* Thuộc tính chung cho 2 nút bấm left/right */
+.control {
+  display: flex;
+  column-gap: 18px;
+  align-items: center;
+}
+
+/* Thuộc tính chung cho mỗi nút bấm left/right */
+.control__btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #575f66;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.control__btn:hover {
+  background-color: #2E80CE;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.control-icon--next {
+  rotate: 180deg;
+}
+
 /* ======================== Header ====================== */
 
 /* ==== Header top ====  */
@@ -349,7 +376,6 @@ a {
 }
 
 .about__img--large {
-  
   width: 512px;
   height: 370px;
   border-radius: 6px;
@@ -381,4 +407,73 @@ a {
 .about-content__desc {
   width: 468px;
   margin: 18px 0 38px;
+}
+
+/* ================== Team ================ */
+
+.team {
+  padding-top: 170px;
+}
+
+.team__heading {
+  text-align: center;
+}
+
+.team-header {
+  text-align: center;
+}
+
+.team__cta {
+  margin-top: 38px;
+  margin-bottom: 70px;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.team-item:hover .team-item__thumb {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.team-item__thumb {
+  height: 290px;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-item__img--bg {
+  padding-top: 28px;
+  overflow: hidden;
+}
+
+.team-item__name {
+  color: #10375c;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+  margin-top: 12px;
+}
+
+.team-item__desc {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.86; /* 185.714% */
+}
+
+.team__control {
+  margin-top: 38px;
+  justify-content: center;
+}
+
+.control__btn {
+ 
+  
 }
