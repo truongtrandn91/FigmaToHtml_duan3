@@ -77,7 +77,7 @@ a {
 }
 
 .control__btn:hover {
-  background-color: #2E80CE;
+  background-color: #2e80ce;
   color: #fff;
   transition: 0.25s;
 }
@@ -473,7 +473,51 @@ a {
   justify-content: center;
 }
 
-.control__btn {
- 
+/* =================== Install ================ */
+
+.install {
+  padding-top: 170px;
+}
+
+.install__inner {
+  height: 427px;
+  border-radius: 4px;
+  background: #2e80ce;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  position: relative;
+}
+
+.install__img {
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+}
+
+.install__content {
+  min-width: 586px;
+}
+
+.install__heading {
+  max-width: 489px;
+  color: #FFF;
+}
+
+.install__desc {
+  width: 586px;
+  color: #FFF;
+}
+
+.install__row {
+  display: flex;
+  column-gap: 28px;
   
+}
+
+.install__btn-img {
+  margin-top: 38px;
 }
